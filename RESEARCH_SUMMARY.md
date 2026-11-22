@@ -87,10 +87,14 @@ analysis, traced one Figure 2 borrower through the workbook and refit,
 repaired the clean-checkout comparison to accept newly added audit columns,
 and made figure sources machine-readable.
 
+## External evaluation of the frozen threshold
+
+On South German Credit, one-reason coverage was 27.6–33.3% and the repeat-agreement gain was 12.9–20.1 percentage points. On Polish Companies Bankruptcy, coverage was 35.6–52.0% and the gain was 1.8–9.9 points. The rule met both targets on zero splits of either external dataset. Each external dataset used freshly fitted logistic models and train-derived groups. [Methods and per-split results](experiments/external/README.md)
+
 ## Remaining submission limits
 
-This is a checked logistic-regression audit of one historical UCI dataset.
-It lacks synthetic known-ground-truth experiments, a second dataset, another
+The monthly bill-cancellation analysis covers the Taiwan dataset. The external experiments assess transfer of the display rule to two additional datasets.
+It lacks synthetic known-ground-truth experiments, another
 model family or explainer, temporal evaluation, recourse, human evaluation and
 inferential treatment of dependent fit pairs. It therefore does not support
 claims of causal recourse, legal compliance, general explanation correctness,

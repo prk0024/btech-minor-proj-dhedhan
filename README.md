@@ -36,6 +36,12 @@ summary and [CLAIMS.md](CLAIMS.md) for an evidence ledger, including what
 remains unimplemented. The `new-repo/` directory is historical research
 material, not the executable implementation.
 
+## External evaluation and study materials
+
+The frozen 0.36 rule selected cases with above-baseline repeat agreement on all ten external splits. It met the joint gain and coverage targets on 0/5 South German Credit splits and 0/5 Polish Companies Bankruptcy splits, compared with 5/5 fresh Taiwan splits. [Results, source data and reproduction commands](experiments/external/README.md)
+
+The [study guide](reports/study-guide.md) explains the experiment from first principles. The [report revisions](reports/report-inserts.md) include Figures 7 and 8 and are also available as an [editable Word document](reports/COMET-XAI-report-inserts.docx).
+
 ## Reproduce from a clean checkout
 
 ```bash
