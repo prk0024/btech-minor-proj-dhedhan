@@ -22,3 +22,22 @@ need to keep ranking stability and individual-reason stability separate.
 model metrics, attributions, borrower audit, and bill-cancellation table. The
 fresh one-or-two-reason evaluation is in
 [../near-tie/fresh/rule_metrics.csv](../near-tie/fresh/rule_metrics.csv).
+
+## What happened in the close calls?
+
+Each row below compares the same close-call cases under both displays. A close
+call has a relative gap below 0.36 in the first fit. The second fit supplies
+the leading reason used to score both columns.
+
+| Split seed | First reason alone repeated | Either of the two displayed reasons came first |
+| --- | ---: | ---: |
+| 20261032 | 50.7% | 80.5% |
+| 20261033 | 45.7% | 70.4% |
+| 20261034 | 45.3% | 74.3% |
+| 20261035 | 41.9% | 66.7% |
+| 20261036 | 42.2% | 68.2% |
+
+These rates can also be recovered from each row of the rule metrics CSV.
+Subtract `coverage * single_reason_repeat` from `baseline_repeat` for the
+first column of rates, or from `containment` for the second. Divide each
+result by `two_reason_rate`.
